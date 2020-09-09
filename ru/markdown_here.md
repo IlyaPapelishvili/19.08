@@ -1,196 +1,191 @@
 #  ![Логотип Markdown Here](https://vignette.wikia.nocookie.net/masseffect/images/b/b5/%D0%9D%D0%BE%D1%81_%D0%90%D1%81%D1%82%D1%80%D0%B0_%D0%98%D0%BB%D0%BB%D0%B8%D1%83%D0%BC.png/revision/latest?cb=20130611042553&path-prefix=ru) Markdown здесь
 
-[**Visit the website.**](http://markdown-here.com)<br>
-[**Get it for Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)<br>
-[**Get it for Firefox.**](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)<br>
-[**Get it for Safari.**](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz)<br>
-[**Get it for Thunderbird and Postbox.**](https://addons.mozilla.org/en-US/thunderbird/addon/markdown-here/)<br>
-[**Get it for Opera.**](https://addons.opera.com/en/extensions/details/markdown-here/)<br>
-[**Discuss it and ask questions in the Google Group.**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)<br>
+[**Посетите сайт.**](http://markdown-here.com)<br>
+[**Получите это для Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)<br>
+[**Загрузите его для Firefox.**](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)<br>
+[**Получите это для Safari.**](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz)<br>
+[**Получите это для Thunderbird и Postbox.**](https://addons.mozilla.org/en-US/thunderbird/addon/markdown-here/)<br>
+[**Получите это для Opera.**](https://addons.opera.com/en/extensions/details/markdown-here/)<br>
+[**Обсудите это и задайте вопросы в Группе Google.**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)<br>
 
 *Markdown Это* расширение для Google Chrome, Firefox, Safari, Opera и Thunderbird, которое позволяет писать электронные письма <sup>†</sup> в Markdown <sup>‡</sup> и отображать их перед отправкой. Он также поддерживает подсветку синтаксиса (просто укажите язык в изолированном блоке кода).оплтиямявкпяваяпуаыу
 
-Writing email with code in it is pretty tedious. Writing Markdown with code in it is easy. I found myself writing email in Markdown in the Github in-browser editor, then copying the preview into email. This is a pretty absurd workflow, so I decided create a tool to write and render Markdown right in the email.
+Написание электронной почты с кодом довольно утомительно. Написать Markdown с помощью кода очень просто. Я обнаружил, что пишу электронное письмо в Markdown в редакторе Github в браузере, а затем копирую превью в электронное письмо. Это довольно абсурдный рабочий процесс, поэтому я решил создать инструмент для написания и рендеринга Markdown прямо в электронном письме.
 
 To discover what can be done with Markdown in *Markdown Here*, check out the [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) and the other [wiki pages](https://github.com/adam-p/markdown-here/wiki).
 
-<sup>†: And Google Groups posts, and Blogger posts, and Evernote notes, and Wordpress posts! <a href="#compatibility">See more</a>.</sup><br>
-<sup>‡: And TeX mathematical formulae!</sup>
+<sup>†: И сообщения групп Google, и сообщения Blogger, и заметки Evernote, и сообщения Wordpress! <a href="#compatibility">Узнать больше</a> .</sup><br>
+<sup>‡: И математические формулы TeX!</sup>
 
-![screenshot of conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
+![скриншот преобразования](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
 
-### Table of Contents
+### Оглавление
 
-**[Installation Instructions](#installation-instructions)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
-**[Troubleshooting](#troubleshooting)**<br>
-**[Compatibility](#compatibility)**<br>
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Building the Extension Bundles](#building-the-extension-bundles)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
+**[Инструкция по установке](#installation-instructions)**<br>
+**[Инструкции по использованию](#usage-instructions)**<br>
+**[Исправление проблем](#troubleshooting)**<br>
+**[Совместимость](#compatibility)**<br>
+**[Примечания и прочее](#notes-and-miscellaneous)**<br>
+**[Сборка пакетов расширений](#building-the-extension-bundles)**<br>
+**[Следующие шаги, Благодарности, Отзывы, Лицензия](#next-steps)**<br>
 
-## Installation Instructions
+## Инструкция по установке
 
-### Chrome
+### Хром
 
-#### Chrome Web Store
+#### Интернет-магазин Chrome
 
-Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
+Перейдите на [страницу Интернет-магазина Chrome для *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) и установите его как обычно.
 
-After installing, make sure to reload your webmail or restart Chrome!
+После установки обязательно перезагрузите веб-почту или перезапустите Chrome!
 
-#### Manual/Development
+#### Руководство / Развитие
 
-1. Clone this repo.
-2. In Chrome, open the Extensions settings. (Wrench button, Tools, Extensions.)
+1. Клонировать это репо.
+2. В Chrome откройте настройки расширений. (Кнопка гаечного ключа, Инструменты, Расширения.)
 3. На странице настроек расширений установите флажок «Режим разработчика».оапролд
-4. Click the now-visible "Load unpacked extension…" button. Navigate to the directory where you cloned the repo, then the `src` directory under that.
-5. The *Markdown Here* extension should now be visible in your extensions list.
-6. Reload your webmail page (and maybe application) before trying to convert an email.
+4. Нажмите теперь видимую кнопку «Загрузить распакованное расширение…». Перейдите в каталог, в который вы клонировали репо, а затем в каталог `src` под ним.
+5. Расширение *Markdown Here* теперь должно быть видно в вашем списке расширений.
+6. Перезагрузите страницу веб-почты (и, возможно, приложение), прежде чем пытаться преобразовать электронную почту.
 
-### Firefox and Thunderbird
+### Firefox и Thunderbird
 
-#### Mozilla Add-ons site
+#### Сайт дополнений Mozilla
 
-Go to the [Firefox Add-ons page for *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) and install normally.
+Перейдите на [страницу надстроек Firefox для *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) и установите как обычно.
 
-Or go to the "Tools > Add-ons" menu and then search for "Markdown Here".
+Или перейдите в меню «Инструменты> Надстройки» и выполните поиск по запросу «Markdown Here».
 
-After installing, make sure to restart Firefox/Thunderbird!
+После установки обязательно перезапустите Firefox / Thunderbird!
 
-**Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
+**Примечание.** Mozilla может потребовать до месяца для утверждения изменений в расширении Firefox / Thunderbird, поэтому обновления (функции, исправления) будут отставать от показанных здесь. Вы можете вручную выбрать установку самой новой версии, прежде чем она будет рассмотрена, из списка версий: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
 
-#### Manual/Development
+#### Руководство / Развитие
 
-1. Clone this repo.
-2. Follow the instructions in the MDN ["Setting up an extension development environment"](https://developer.mozilla.org/en/Setting_up_extension_development_environment) article.
+1. Клонировать это репо.
+2. Следуйте инструкциям в статье MDN [«Настройка среды разработки расширений»](https://developer.mozilla.org/en/Setting_up_extension_development_environment) .
 
-### Safari
+### Сафари
 
-[Download the extension directly.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) When it has finished downloading, double click it to install.
+[Скачайте расширение напрямую.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) Когда загрузка завершится, дважды щелкните ее, чтобы установить.
 
-#### Preferences
+#### предпочтения
 
-To get to the Markdown Here preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
+Чтобы перейти к настройкам Markdown Here, откройте настройки Safari и перейдите на вкладку «Расширения». Затем щелкните поле «Щелкните меня, чтобы отобразить параметры Markdown Here».
 
-### Opera
+### опера
 
-Note that *Markdown Here* only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
+Обратите внимание, что *Markdown Here* работает только с Opera версий 16 и выше (то есть с теми, которые основаны на Chromium).
 
-Go to the [Opera Add-ons store page for *Markdown Here*](https://addons.opera.com/en/extensions/details/markdown-here/) and install normally.
+Перейдите на [страницу магазина дополнений Opera для *Markdown Here*](https://addons.opera.com/en/extensions/details/markdown-here/) и установите его как обычно.
 
-After installing, make sure to reload your webmail or restart Chrome!
+После установки обязательно перезагрузите веб-почту или перезапустите Chrome!
 
-## Usage Instructions
+## Инструкции по использованию
 
-Install it, and then…
+Установите его, а затем…
 
-1. In Chrome/Safari/Opera, *make sure* you reload your web mail page before trying to use Markdown Here.
+1. В Chrome / Safari / Opera *не забудьте* перезагрузить страницу веб-почты, прежде чем использовать Markdown Here.
 
-2. In Chrome/Firefox/Safari/Opera, log into your Gmail, Hotmail, or Yahoo account and start a new email. In Thunderbird, start a new message.
+2. В Chrome / Firefox / Safari / Opera войдите в свою учетную запись Gmail, Hotmail или Yahoo и создайте новое письмо. В Thunderbird создайте новое сообщение.
 
-3. Make sure you're using the rich editor.
+3. Убедитесь, что вы используете многофункциональный редактор.
 
-    - In Gmail, click the "Rich formatting" link, if it's visible.
-    - In Thunderbird, make sure "Compose messages in HTML format" is enabled in your "Account Settings", "Composition & Addressing" pane.
+    - В Gmail нажмите ссылку «Расширенное форматирование», если она видна.
+    - Убедитесь, что в Thunderbird включен параметр «Создавать сообщения в формате HTML» на панели «Настройки учетной записи», «Составление и адресация».
 
-4. Compose an email in Markdown. For example:
+4. Напишите электронное письмо в Markdown. Например:
 
-    <pre>**Hello** `world`.
+    <pre>** Привет ** `мир`.<br><br>`` `Javascript<br>alert ('Подсветка синтаксиса Hello.');<br>`` `<br></pre>
 
-    ```javascript
-    alert('Hello syntax highlighting.');
-    ```
-    </pre>
+5. Щелкните правой кнопкой мыши поле создания и выберите в контекстном меню пункт «Markdown Toggle». Или нажмите кнопку, которая появляется в адресной строке. Или используйте горячую клавишу (по умолчанию <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>M</kbd> ).
 
-5. Right-click in the compose box and choose the "Markdown Toggle" item from the context menu. Or click the button that appears in your address bar. Or use the hotkey (<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>M</kbd> by default).
+6. Вы должны увидеть, что ваше электронное письмо правильно отображается из Markdown в форматированный HTML.
 
-6. You should see your email rendered correctly from Markdown into rich HTML.
+7. Отправьте отличное письмо всем, кого вы знаете. Он будет казаться им таким же, как и вам.
 
-7. Send your awesome email to everyone you know. It will appear to them the same way it looks to you.
+### Вернуться к Markdown
 
-### Revert to Markdown
+После рендеринга Markdown в красивый HTML вы все равно можете вернуться к исходному Markdown. Просто щелкните правой кнопкой мыши в любом месте только что отрендеренного Markdown и нажмите «Markdown Toggle» - тело вашего электронного письма изменится обратно на Markdown, который вы написали.
 
-After rendering your Markdown to pretty HTML, you can still get back to your original Markdown. Just right-click anywhere in the newly rendered Markdown and click "Markdown Toggle" -- your email compose body will change back to the Markdown you had written.
+Обратите внимание, что любые изменения, которые вы вносите в красивый HTML-код, будут потеряны, когда вы вернетесь к Markdown.
 
-Note that any changes you make to the pretty HTML will be lost when you revert to Markdown.
+В Gmail вы также можете использовать команду браузера «Отменить» ( <kbd>CTRL</kbd> + <kbd>Z</kbd> / <kbd>CMD</kbd> + <kbd>Z</kbd> или из меню «Правка»). Имейте в виду, что вы также можете потерять несколько последних введенных символов.
 
-In Gmail, you can also use the browser's Undo command (<kbd>CTRL</kbd>+<kbd>Z</kbd> / <kbd>CMD</kbd>+<kbd>Z</kbd>, or from the Edit menu). Be warned that you might also lose the last few characters you entered.
+### Ответы
 
-### Replies
+В Gmail, Thunderbird и Google Группах вы можете использовать «Markdown Toggle» как обычно: просто напишите свой ответ (вверху, внизу, в строке, где угодно), а затем конвертируйте. Исходное письмо, на которое вы отвечаете, останется в покое. (Технически: существующие блоки `blockquote` будут оставлены без изменений.)
 
-In Gmail, Thunderbird, and Google Groups, you can use "Markdown Toggle" normally: just write your reply (top, bottom, inline, wherever) and then convert. The original email that you're replying to will be left alone. (Technically: Existing `blockquote` blocks will be left intact.)
+В Hotmail и Yahoo (которые не помещают оригинал в `blockquote` ) и, возможно, в Gmail, Thunderbird и группах Google, вы можете гарантировать, что только часть написанного вами ответа будет преобразована, выбрав то, что вы хотите преобразовать. и затем щелкнув «Markdown Toggle» - см. следующий раздел.
 
-In Hotmail and Yahoo (which don't put the original in a `blockquote`), and optionally in Gmail, Thunderbird, and Google Groups, you can ensure that only the part of the reply that you wrote gets converted by selecting what you want to convert and then clicking "Markdown Toggle" -- see the next section.
+### Отбор / частичное преобразование
 
-### Selection/Piecemeal Conversion
+Иногда вы не хотите преобразовывать всю электронную почту; иногда ваша электронная почта не является полностью Markdown. Чтобы преобразовать только часть электронного письма, выделите текст (с помощью мыши или клавиатуры), щелкните его правой кнопкой мыши и выберите пункт меню «Переключатель разметки». Ваш выбор волшебным образом преобразуется в красивый HTML.
 
-Sometimes you don't want to convert the entire email; sometimes your email isn't entirely Markdown. To convert only part of the email, select the text (with your mouse or keyboard), right-click on it, and click the "Markdown Toggle" menu item. Your selection is magically rendered into pretty HTML.
+Чтобы вернуться к Markdown, просто поместите курсор в любом месте блока преобразованного текста, щелкните правой кнопкой мыши и снова щелкните пункт меню «Markdown Toggle». Теперь он волшебным образом вернулся к оригинальной Markdown.
 
-To revert back to Markdown, just put your cursor anywhere in the block of converted text, right click, and click the "Markdown Toggle" menu item again. Now it's magically back to the original Markdown.
+![снимок экрана преобразования выделения](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image2.gimp.png)
 
-![screenshot of selection conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image2.gimp.png)
+#### Что нужно знать о преобразовании / возврате выделения
 
-#### Things to know about converting/reverting a selection
+- Если вы выберете только часть блока текста, будет преобразован только этот текст. Преобразованный блок будет заключен в элемент абзаца, поэтому исходная строка будет разбита. Вы, вероятно, никогда не захотите этого делать.
 
-- If you select only part of a block of text, only that text will be converted. The converted block will be wrapped in a paragraph element, so the original line will be broken up. You probably don't want to ever do this.
+- Вы можете выбрать и отменить несколько преобразованных блоков одновременно. Одним из результатов этого является то, что вы можете выбрать всю электронную почту, щелкнуть «Markdown Toggle», и все ее части, которые вы преобразовали, будут возвращены.
 
-- You can select and revert multiple converted blocks at the same time. One upshot of this is that you can select your entire email, click "Markdown Toggle", and all portions of it that you had converted will be reverted.
+- Если при нажатии кнопки «Переключить уценку» у вас ничего не выбрано, *Markdown Here* проверит, есть ли преобразованные блоки где-нибудь в сообщении, и вернет их. Если преобразованных блоков не найдено, он преобразует все письмо.
 
-- If you don't have anything selected when you click "Markdown Toggle", *Markdown Here* will check if there are converted blocks anywhere in the message and revert them. If there no converted blocks are found, it will convert the entire email.
+### Параметры
 
-### Options
+Доступ к странице параметров *Markdown Here* можно получить через список расширений Chrome, Firefox, Safari или Thunderbird. Доступные варианты включают:
 
-The *Markdown Here* Options page can be accessed via the Chrome, Firefox, Safari, or Thunderbird extensions list. The available options include:
+- Модификации стиля для визуализированного Markdown.
+- Выбор и модификация темы с подсветкой синтаксиса.
+- Включение и настройка обработки математических формул TeX.
+- Какой должна быть горячая клавиша.
 
-- Styling modifications for the rendered Markdown.
-- Syntax highlighting theme selection and modification.
-- TeX math formulae processing enabling and customization.
-- What the hotkey should be.
+Для Chrome и Firefox любые изменения, сделанные в параметрах *Markdown Here* , автоматически синхронизируются между вашими другими установками этого браузера (если у вас включена функция синхронизации в браузере).
 
-For Chrome and Firefox, any changes made in the *Markdown Here* Options are automatically synchronized between your other installations of that browser (if you have the sync feature enabled in the browser).
+![скриншот вариантов](https://raw.githubusercontent.com/adam-p/markdown-here/master/store-assets/markdown-here-chrome-options-1.gimp.png)
 
-![screenshot of options](https://raw.githubusercontent.com/adam-p/markdown-here/master/store-assets/markdown-here-chrome-options-1.gimp.png)
-
-## Troubleshooting
+## Исправление проблем
 
 See the [Troubleshooting wiki page](https://github.com/adam-p/markdown-here/wiki/Troubleshooting).
 
-## Compatibility
+## Совместимость
 
 See the [Compatibility wiki page](https://github.com/adam-p/markdown-here/wiki/Compatibility).
 
-## Notes and Miscellaneous
+## Примечания и прочее
 
-- *Markdown Here* uses [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/adam-p/markdown-here/issues/11)); nor will they be, as MDH is not Github-specific.
+- *Markdown Here* использует [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/) с тем ограничением, что специальные ссылки GFM не поддерживаются ( [проблема № 11](https://github.com/adam-p/markdown-here/issues/11) ); и не будет, поскольку MDH не привязан к Github.
 
-- Available languages for syntax highlighting (and the way they should be written in the fenced code block) can be seen on the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+- Доступные языки для подсветки синтаксиса (и то, как они должны быть написаны в изолированном блоке кода) можно увидеть на [демонстрационной странице highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.html) .
 
-- Images embedded inline in your Markdown will be retained when you "Markdown Toggle". Gmail allows you to put images inline in your email -- this can be much easier than referencing an external image.
+- Изображения, встроенные в ваш Markdown, будут сохранены, когда вы «Переключите Markdown». Gmail позволяет вставлять изображения в электронную почту - это может быть намного проще, чем ссылка на внешнее изображение.
 
-- Email signatures are automatically excluded from conversion. Specifically, anything after the semi-standard `'-- '` (note the trailing space) is left alone.
+- Электронные подписи автоматически исключаются из преобразования. В частности, все, что находится после полустандартного `'-- '` (обратите внимание на конечный пробел), остается без изменений.
 
-    - Note that Hotmail and Yahoo do *not* automatically add the `'-- '` to signatures, so you have to add it yourself.
+    - Обратите внимание, что Hotmail и Yahoo *не* добавляют автоматически знак `'-- '` к подписям, поэтому вам придется добавить его самостоятельно.
 
-- The "Markdown Toggle" menu item shows up for more element types than it can correctly render. This is intended to help people realize that they're not using a rich editor. Otherwise they just don't see the menu item and don't know why.
+- Пункт меню «Markdown Toggle» отображается для большего количества типов элементов, чем он может правильно отобразить. Это сделано, чтобы помочь людям понять, что они не используют многофункциональный редактор. В противном случае они просто не видят пункт меню и не знают почему.
 
-- Styling:
+- Стилизация:
 
-    - The use of browser-specific styles (-moz-, -webkit-) should be avoided. If used, they may not render correctly for people reading the email in a different browser from the one where the email was sent.
-    - The use of state-dependent styles (like `a:hover`) don't work because they don't match at the time the styles are made explicit. (In email, styles must be explicitly applied to all elements -- stylesheets get stripped.)
+    - Следует избегать использования стилей, специфичных для браузера (-moz-, -webkit-). Если они используются, они могут некорректно отображаться для людей, читающих электронное письмо в другом браузере, отличном от того, в котором оно было отправлено.
+    - Использование стилей, зависящих от состояния (таких `a:hover` ), не работает, потому что они не совпадают в то время, когда стили указаны явно. (В электронной почте стили должны быть явно применены ко всем элементам - таблицы стилей удаляются.)
 
-- For more tweaky features, visit the [Tips and Tricks](https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks) section.
+- Чтобы узнать о дополнительных функциях, посетите раздел [Советы и рекомендации](https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks) .
 
-## Building the Extension Bundles
+## Сборка пакетов расширений
 
 ```
 cd utils
 node build.js
 ```
 
-### Chrome and Opera extension
+### Расширение Chrome и Opera
 
-Create a file with a `.zip` extension containing these files and directories:
+Создайте файл с расширением `.zip` содержащий следующие файлы и каталоги:
 
 ```
 manifest.json
@@ -198,9 +193,9 @@ common/
 chrome/
 ```
 
-### Firefox/Thunderbird extension
+### Расширение Firefox / Thunderbird
 
-Create a file with a `.xpi` extension containing these files and directories:
+Создайте файл с расширением `.xpi` содержащий следующие файлы и каталоги:
 
 ```
 chrome.manifest
@@ -209,46 +204,46 @@ common/
 firefox/
 ```
 
-### Safari extension
+### Расширение Safari
 
-The browser-specific code is located in the [`markdown-here-safari`](https://github.com/adam-p/markdown-here-safari) project.
+Код для конкретного браузера находится в проекте [`markdown-here-safari`](https://github.com/adam-p/markdown-here-safari) .
 
-Use the Safari Extension Builder.
+Воспользуйтесь конструктором расширений Safari.
 
-## Next Steps
+## Следующие шаги
 
-See the [issues list](https://github.com/adam-p/markdown-here/issues) and the [Notes Wiki](https://github.com/adam-p/markdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
+См. [Список проблем](https://github.com/adam-p/markdown-here/issues) и [Notes Wiki](https://github.com/adam-p/markdown-here/wiki/Development-Notes) . Все идеи, ошибки, планы, жалобы и мечты окажутся в одном из этих двух мест.
 
 Feel free to create a feature request issue if what you want isn't already there. If you'd prefer a less formal approach to floating an idea, post to the ["markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
 
-It also takes a fair bit of work to stay up-to-date with the latest changes in all the applications and web sites where Markdown Here works.
+Также требуется немало усилий, чтобы оставаться в курсе последних изменений во всех приложениях и веб-сайтах, где работает Markdown Here.
 
-## Credits
+## кредиты
 
-*Markdown Here* was coded on the shoulders of giants.
+*Markdown Here* был закодирован на плечах гигантов.
 
-- Markdown-to-HTML: [chjj / marked](https://github.com/chjj/marked)
-- Syntax highlighting: [isagalaev / highlight.js](https://github.com/isagalaev/highlight.js)
+- Markdown-to-HTML: [chjj / отмечен](https://github.com/chjj/marked)
+- Подсветка синтаксиса: [isagalaev / highlight.js](https://github.com/isagalaev/highlight.js)
 - HTML-to-text: [mtrimpe / jsHtmlToText](https://github.com/mtrimpe/jsHtmlToText)
 
-## Feedback
+## Обратная связь
 
-All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/adam-p/markdown-here/issues). Or [post to the "markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
+Приветствуются все ошибки, запросы функций, запросы на включение, отзывы и т. Д. [Создайте проблему](https://github.com/adam-p/markdown-here/issues) . Или отправьте [сообщение в группу Google "markdown-here"](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here) .
 
-## License
+## Лицензия
 
-### Code
+### Код
 
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
+Лицензия MIT: http://adampritchard.mit-license.org/ или просмотрите [файл `LICENSE`](https://github.com/adam-p/markdown-here/blob/master/LICENSE) .
 
-### Logo
+### логотип
 
 Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Markdown Here under the [MDH contributor license agreement](https://github.com/adam-p/markdown-here/blob/master/CLA-individual.md).
 
-### Other images
+### Другие изображения
 
-[Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
+[Лицензия Creative Commons Attribution 3.0 Unported (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
 
 ---
 
-![Dos Equis man says](https://raw.github.com/adam-p/markdown-here/master/store-assets/dos-equis-MDH.jpg)
+![Человек Dos Equis говорит](https://raw.github.com/adam-p/markdown-here/master/store-assets/dos-equis-MDH.jpg)
